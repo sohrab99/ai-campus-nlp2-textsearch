@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>NLP2 Demo</title>
+</head>
+<body>
+	<div class="title">
+		<h1>NLP2 Demo</h1>
+	</div>
+
+	<div class="upload">
+		<div class="upload__url">
+			<form action="" enctype="multipart/form-data" method="POST">
+				<input type="text" name='url' placeholder="Input Article URL"/>
+				<input type="submit" value="Analyze"/>
+			</form>
+		</div>
+	</div>
+  {% if article %}
+  <hr>
+  {{article.text}}
+  {% endif %}
+</body>
+</html>
